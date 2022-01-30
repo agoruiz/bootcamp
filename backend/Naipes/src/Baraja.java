@@ -1,0 +1,4 @@
+
+interface Baraja{
+	enum numeroCartas {};
+}
