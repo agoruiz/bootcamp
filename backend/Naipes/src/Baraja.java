@@ -16,8 +16,6 @@ import java.util.List;
   }
   
 	  
-  
-  
   class Española extends Naipe{
 	int numerocartas = 48;
 	int numeropalos = 4;
@@ -45,8 +43,7 @@ import java.util.List;
 					cartas.put(palos.Oros, j+1);
 				}
 			}
-			
-			
+						
 		}
 		return cartas;
 	}
