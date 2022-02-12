@@ -10,8 +10,10 @@ public class Tablero implements Cloneable{
 	public void quitaPieza(Posicion p) {}
 	public void Mover(Movimiento m) {}
 	public void Clone() {}
-	public Color ColorEscaque(int i1,int i2);
-	public Boolean HayPiezasEntre(Movimiento m) {}	
+	public Color ColorEscaque(int i1,int i2) {
+		return Color.Negro;
+	}
+	public Boolean HayPiezasEntre(Movimiento m) {return false;}	
 		
 	}
 

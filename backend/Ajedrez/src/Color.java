@@ -1,5 +1,5 @@
 
-enum Color {	
+public enum Color {	
  Blanco,
  Negro;
 }
