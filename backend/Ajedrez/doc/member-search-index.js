@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"Movimiento","l":"getPosicionFinal()"},{"p":"<Unnamed>","c":"Movimiento","l":"getPosicionInicial()"},{"p":"<Unnamed>","c":"Movimiento","l":"setPosicionFinal(Posicion)"},{"p":"<Unnamed>","c":"Movimiento","l":"setPosicionInicial(Posicion)"}];updateSearchResults();
