@@ -26,9 +26,19 @@ public class Movimiento {
 	}
 	
 	/*Notacion Internacional Fila A-F columna 1-8*/
-	Movimiento (String movimiento) {
-		if(movimiento == null || movimiento.isEmpty()|| movimiento.length()!=4) {
+	Movimiento (String jugada) {
+		if(jugada == null || jugada.isEmpty()|| jugada.length()!=4) {
 			new Exception("Movimiento no valido");
+		}
+		//Revisar con expresion regular en la siguiente revision del método
+		if(jugada.charAt(0)=='A'|| jugada.charAt(0)=='B'|| jugada.charAt(0)=='C'|| jugada.charAt(0)=='D'|| jugada.charAt(0)=='E'|| jugada.charAt(0)=='F') {
+			if(jugada.charAt(1)=='1'|| jugada.charAt(1)=='2'|| jugada.charAt(1)=='3' || jugada.charAt(1)=='4'|| jugada.charAt(1)=='5'|| jugada.charAt(1)=='6'|| jugada.charAt(1)=='7'|| jugada.charAt(1)=='8' ) {
+				if(jugada.charAt(2)=='A'|| jugada.charAt(2)=='B'|| jugada.charAt(2)=='C'|| jugada.charAt(2)=='D'|| jugada.charAt(2)=='E'|| jugada.charAt(2)=='F') {
+					if(jugada.charAt(3)=='1'|| jugada.charAt(3)=='2'|| jugada.charAt(3)=='3' || jugada.charAt(3)=='4'|| jugada.charAt(3)=='5'|| jugada.charAt(3)=='6'|| jugada.charAt(3)=='7'|| jugada.charAt(3)=='8' ) {
+						
+					}
+				}
+			}
 		}
 		
 	}

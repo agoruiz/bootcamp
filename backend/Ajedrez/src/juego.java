@@ -46,34 +46,6 @@ public void Inicializar(){
 	tabla[1][7] = piezasTablero[15];
 	
 	
-//	piezas[1][0]="PeonB";
-//	piezas[1][1]="PeonB";
-//	piezas[1][2]="PeonB";
-//	piezas[1][3]="PeonB";
-//	piezas[1][4]="PeonB";
-//	piezas[1][5]="PeonB";
-//	piezas[1][6]="PeonB";
-//	piezas[1][7]="PeonB";
-	
-	//Piezas Negras
-	piezas[8][0]="TorreB";
-	piezas[8][1]="AlfilB";
-	piezas[8][2]="CaballoB";
-	piezas[8][3]="ReinaB";
-	piezas[8][4]="ReyB";
-	piezas[8][5]="AlfilB";
-	piezas[8][6]="CaballoB";
-	piezas[8][7]="TorreB";
-	
-	piezas[7][0]="PeonN";
-	piezas[7][1]="PeonN";
-	piezas[7][2]="PeonN";
-	piezas[7][3]="PeonN";
-	piezas[7][4]="PeonN";
-	piezas[7][5]="PeonN";
-	piezas[7][6]="PeonN";
-	piezas[7][7]="PeonN";
-
 }
 public String Jugada(String jugada){
 if(jugada==null || jugada.isEmpty()) {
