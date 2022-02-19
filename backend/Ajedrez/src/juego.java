@@ -3,45 +3,47 @@ public class juego{
 Tablero tablero; 
 Color turno;
 public void Inicializar(){
-    String tabla[][];
-	tabla = new String[8][8];
-	//PiezaBlancas
-	tabla[0][0]="TorreB";
-	tabla[0][1]="AlfilB";
-	tabla[0][2]="CaballoB";
-	tabla[0][3]="ReinaB";
-	tabla[0][4]="ReyB";
-	tabla[0][5]="AlfilB";
-	tabla[0][6]="CaballoB";
-	tabla[0][6]="TorreB";
+    String piezas[][];
+	piezas = new String[8][8];
+	String tabla[][] = new String[8][8];
 	
-	tabla[1][0]="PeonB";
-	tabla[1][1]="PeonB";
-	tabla[1][2]="PeonB";
-	tabla[1][3]="PeonB";
-	tabla[1][4]="PeonB";
-	tabla[1][5]="PeonB";
-	tabla[1][6]="PeonB";
-	tabla[1][7]="PeonB";
+	//PiezaBlancas
+	piezas[0][0]="TorreB";
+	piezas[0][1]="AlfilB";
+	piezas[0][2]="CaballoB";
+	piezas[0][3]="ReinaB";
+	piezas[0][4]="ReyB";
+	piezas[0][5]="AlfilB";
+	piezas[0][6]="CaballoB";
+	piezas[0][6]="TorreB";
+	
+	piezas[1][0]="PeonB";
+	piezas[1][1]="PeonB";
+	piezas[1][2]="PeonB";
+	piezas[1][3]="PeonB";
+	piezas[1][4]="PeonB";
+	piezas[1][5]="PeonB";
+	piezas[1][6]="PeonB";
+	piezas[1][7]="PeonB";
 	
 	//Piezas Negras
-	tabla[8][0]="TorreB";
-	tabla[8][1]="AlfilB";
-	tabla[8][2]="CaballoB";
-	tabla[8][3]="ReinaB";
-	tabla[8][4]="ReyB";
-	tabla[8][5]="AlfilB";
-	tabla[8][6]="CaballoB";
-	tabla[8][7]="TorreB";
+	piezas[8][0]="TorreB";
+	piezas[8][1]="AlfilB";
+	piezas[8][2]="CaballoB";
+	piezas[8][3]="ReinaB";
+	piezas[8][4]="ReyB";
+	piezas[8][5]="AlfilB";
+	piezas[8][6]="CaballoB";
+	piezas[8][7]="TorreB";
 	
-	tabla[7][0]="PeonN";
-	tabla[7][1]="PeonN";
-	tabla[7][2]="PeonN";
-	tabla[7][3]="PeonN";
-	tabla[7][4]="PeonN";
-	tabla[7][5]="PeonN";
-	tabla[7][6]="PeonN";
-	tabla[7][7]="PeonN";
+	piezas[7][0]="PeonN";
+	piezas[7][1]="PeonN";
+	piezas[7][2]="PeonN";
+	piezas[7][3]="PeonN";
+	piezas[7][4]="PeonN";
+	piezas[7][5]="PeonN";
+	piezas[7][6]="PeonN";
+	piezas[7][7]="PeonN";
 
 }
 public String Jugada(String jugada){

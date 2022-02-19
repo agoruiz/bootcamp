@@ -30,9 +30,13 @@ public class Movimiento {
 		if(movimiento == null || movimiento.isEmpty()|| movimiento.length()!=4) {
 			new Exception("Movimiento no valido");
 		}
+		
 	}
+	//Posicion i, Posicion p.
 	/*Devuelve true si el movimiento es vertical en caso contrario false*/	
-	Boolean EsVertical() {return false;}
+	Boolean EsVertical(Posicion i, Posicion f) {
+		return false;
+	}
 	/*Devuelve true si el movimiento es horizontal en caso contrario false*/	
 	Boolean EsHorizonal() {return false;}
 	/*Devuelve true si el movimiento es diagonal en caso contrario false*/	
