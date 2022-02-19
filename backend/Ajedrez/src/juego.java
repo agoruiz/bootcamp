@@ -3,28 +3,57 @@ public class juego{
 Tablero tablero; 
 Color turno;
 public void Inicializar(){
-    String piezas[][];
-	piezas = new String[8][8];
-	String tabla[][] = new String[8][8];
+		
+	
+     Pieza piezasTablero [] = new Pieza[16];
+	 Tablero tabla[][] = new Tablero[8][8];
 	
 	//PiezaBlancas
-	piezas[0][0]="TorreB";
-	piezas[0][1]="AlfilB";
-	piezas[0][2]="CaballoB";
-	piezas[0][3]="ReinaB";
-	piezas[0][4]="ReyB";
-	piezas[0][5]="AlfilB";
-	piezas[0][6]="CaballoB";
-	piezas[0][6]="TorreB";
+	piezasTablero[0]=new Torre(Color.Blanco);
+	piezasTablero[1]=new Caballo(Color.Blanco);
+	piezasTablero[2]=new Alfil(Color.Blanco);
+	piezasTablero[3]=new Reina(Color.Blanco);
+	piezasTablero[4]=new Rey(Color.Blanco);
+	piezasTablero[5]=new Alfil(Color.Blanco);
+	piezasTablero[6]=new Caballo(Color.Blanco);
+	piezasTablero[7]= new Torre(Color.Blanco);
 	
-	piezas[1][0]="PeonB";
-	piezas[1][1]="PeonB";
-	piezas[1][2]="PeonB";
-	piezas[1][3]="PeonB";
-	piezas[1][4]="PeonB";
-	piezas[1][5]="PeonB";
-	piezas[1][6]="PeonB";
-	piezas[1][7]="PeonB";
+	piezasTablero[8]=new Torre(Color.Negro);
+	piezasTablero[9]=new Caballo(Color.Negro);
+	piezasTablero[10]=new Alfil(Color.Negro);
+	piezasTablero[11]=new Reina(Color.Negro);
+	piezasTablero[12]=new Rey(Color.Negro);
+	piezasTablero[13]=new Alfil(Color.Negro);
+	piezasTablero[14]=new Caballo(Color.Negro);
+	piezasTablero[15]= new Torre(Color.Negro);
+	
+	tabla[0][0] = piezasTablero[0];
+	tabla[0][1] = piezasTablero[1];
+	tabla[0][2] = piezasTablero[2];
+	tabla[0][3] = piezasTablero[3];
+	tabla[0][4] = piezasTablero[4];
+	tabla[0][5] = piezasTablero[5];
+	tabla[0][6] = piezasTablero[6];
+	tabla[0][7] = piezasTablero[7];
+	
+	tabla[1][0] = piezasTablero[8];
+	tabla[1][1] = piezasTablero[9];
+	tabla[1][2] = piezasTablero[10];
+	tabla[1][3] = piezasTablero[11];
+	tabla[1][4] = piezasTablero[12];
+	tabla[1][5] = piezasTablero[13];
+	tabla[1][6] = piezasTablero[14];
+	tabla[1][7] = piezasTablero[15];
+	
+	
+//	piezas[1][0]="PeonB";
+//	piezas[1][1]="PeonB";
+//	piezas[1][2]="PeonB";
+//	piezas[1][3]="PeonB";
+//	piezas[1][4]="PeonB";
+//	piezas[1][5]="PeonB";
+//	piezas[1][6]="PeonB";
+//	piezas[1][7]="PeonB";
 	
 	//Piezas Negras
 	piezas[8][0]="TorreB";
