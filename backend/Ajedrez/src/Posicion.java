@@ -49,7 +49,7 @@ Posicion(char letra, char numero){
 			laColumna = 7;
 	}
 	}
-}
+
 public int getLaFila() {
 	return laFila;
 }
