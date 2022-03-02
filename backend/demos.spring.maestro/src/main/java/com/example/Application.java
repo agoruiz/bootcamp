@@ -3,10 +3,16 @@ package com.example;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.example.domains.contracts.services.ActorService;
+import com.example.domains.contracts.services.FilmService;
+import com.example.ioc.Servicio;
+
 import springfox.documentation.oas.annotations.EnableOpenApi;
 
 import javax.transaction.Transactional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 
 @EnableOpenApi
@@ -17,9 +23,9 @@ public class Application implements CommandLineRunner {
 		SpringApplication.run(Application.class, args);
 	}
 	
-//	@Autowired
-//	@Qualifier("despliegue")
-//	Servicio srv;
+	@Autowired
+	@Qualifier("despliegue")
+	Servicio srv;
 //	
 //	@Autowired(required = false)
 //	@Qualifier("manual")
@@ -32,9 +38,11 @@ public class Application implements CommandLineRunner {
 //	ActorRepositoy dao;
 //
 //	
-//	@Autowired
-//	ActorService srvActor;
+	@Autowired
+	ActorService srvActor;
 
+	@Autowired
+	FilmService film;
 	@Override
 	@Transactional
 	public void run(String... args) {
