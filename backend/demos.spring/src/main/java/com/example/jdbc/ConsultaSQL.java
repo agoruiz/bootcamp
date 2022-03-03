@@ -8,39 +8,37 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-@Repository
+//@Repository
 public class ConsultaSQL {
-
-	public void run() {
-		List<Actor> listado = new ArrayList<>();
-		try (Connection con = JDBCBridged.getConnection()) {
-			String sql = "SELECT * FROM actor WHERE first_name LIKE ?";
-			try (PreparedStatement cmd = con.prepareStatement(sql)) {
-				cmd.setString(1, "P%");
-				try (ResultSet rs = cmd.executeQuery()) {
-					while (rs.next()) {
-						listado.add(new Actor(
-								rs.getInt(1),
-								rs.getString(2),
-								rs.getString(3),
-								rs.getDate(4)
-								));
-					}
-				} catch (SQLException e) {
-					System.out.println("ERROR: " + e.getMessage());
-				}
-			} catch (SQLException e) {
-				System.out.println("ERROR: " + e.getMessage());
-			}
-		} catch (SQLException e) {
-			System.out.println("ERROR: " + e.getMessage());
-		}
-		listado.forEach(System.out::println);
-	}
+//
+//	public void run() {
+//		List<Actor> listado = new ArrayList<>();
+//		try (Connection con = JDBCBridged.getConnection()) {
+//			String sql = "SELECT * FROM actor WHERE first_name LIKE ?";
+//			try (PreparedStatement cmd = con.prepareStatement(sql)) {
+//				cmd.setString(1, "P%");
+//				try (ResultSet rs = cmd.executeQuery()) {
+//					while (rs.next()) {
+//						listado.add(new Actor(
+//								rs.getInt(1),
+//								rs.getString(2),
+//								rs.getString(3),
+//								rs.getDate(4)
+//								));
+//					}
+//				} catch (SQLException e) {
+//					System.out.println("ERROR: " + e.getMessage());
+//				}
+//			} catch (SQLException e) {
+//				System.out.println("ERROR: " + e.getMessage());
+//			}
+//		} catch (SQLException e) {
+//			System.out.println("ERROR: " + e.getMessage());
+//		}
+//		listado.forEach(System.out::println);
+//	}
 	
 	/*
 cmdSQL = "delete from ingredientes where idIngrediente = ?";
@@ -53,18 +51,18 @@ cad
 1; DROP TABLE ...
 1; EXEC CMDSHELL('FDISK ....
 	 */
-	public void delete(String cad) {
-		try (Connection con = JDBCBridged.getConnection()) {
-			String sql = "Delete FROM actor WHERE actor_id = " + cad; // <-- NO HACER NUNCA: IYECCION SQL
-			try (Statement cmd = con.createStatement()) {
-				cmd.executeUpdate(sql);
-				} catch (SQLException e) {
-					System.out.println("ERROR: " + e.getMessage());
-				}
-			} catch (SQLException e) {
-				System.out.println("ERROR: " + e.getMessage());
-			}
-	}
+//	public void delete(String cad) {
+//		try (Connection con = JDBCBridged.getConnection()) {
+//			String sql = "Delete FROM actor WHERE actor_id = " + cad; // <-- NO HACER NUNCA: IYECCION SQL
+//			try (Statement cmd = con.createStatement()) {
+//				cmd.executeUpdate(sql);
+//				} catch (SQLException e) {
+//					System.out.println("ERROR: " + e.getMessage());
+//				}
+//			} catch (SQLException e) {
+//				System.out.println("ERROR: " + e.getMessage());
+//			}
+//	}
 	
 //	@Autowired
 //	JdbcTemplate jdbcTemplate;

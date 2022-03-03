@@ -1,8 +1,6 @@
 package com.example.application.dtos;
 
-import javax.validation.constraints.NotBlank;
 
-import org.hibernate.validator.constraints.Length;
 
 import com.example.domains.entities.Country;
 import com.fasterxml.jackson.annotation.JsonProperty;

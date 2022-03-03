@@ -1,39 +1,28 @@
 package com.example.application.resources;
 
-import java.net.URI;
 import java.util.List;
 
-import javax.validation.ConstraintViolation;
 import javax.validation.Valid;
-import javax.validation.Validator;
-import javax.websocket.server.PathParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.example.domains.contracts.services.CategoryService;
 import com.example.domains.contracts.services.FilmService;
-import com.example.domains.entities.Category;
 import com.example.domains.entities.Film;
-import com.example.exceptions.DuplicateKeyException;
 import com.example.exceptions.InvalidDataException;
 import com.example.exceptions.NotFoundException;
 
 import org.springframework.http.HttpStatus;
 
 @RestController
-//@RequestMapping("/api/categorias")
+@RequestMapping("/api/categorias")
 public class FilmResource {
 	@Autowired
 	private FilmService srv;
@@ -61,8 +50,8 @@ public class FilmResource {
 
 	@PutMapping(path = "/api/film/{id}")
 	@ResponseStatus(HttpStatus.ACCEPTED)
-	public void update(@PathVariable int id, @Valid @RequestBody Category item) throws InvalidDataException, NotFoundException {
-		if(id != item.getCategoryId())
+	public void update(@PathVariable int id, @Valid @RequestBody Film item) throws InvalidDataException, NotFoundException {
+		if(id != item.getFilmId())
 			throw new InvalidDataException("No coinciden los identificadore");
 		if(item.isInvalid())
 			throw new InvalidDataException(item.getErrorsMessage());

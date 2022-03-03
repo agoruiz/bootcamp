@@ -6,9 +6,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import com.example.domains.entities.Country;
 import com.example.domains.entities.Language;
+@RepositoryRestResource(exported = false)
 
 public interface IdiomasRepository extends JpaRepository<Language, Integer> {
 	<T> List<T> findByLanguageIdIsNotNull(Class<T> type);

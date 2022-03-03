@@ -1,6 +1,10 @@
 package com.example.exceptions;
 
-public class DuplicateKeyException extends Exception {
+import java.io.Serializable;
+
+public class DuplicateKeyException extends Exception implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 
 	public DuplicateKeyException() {
 		this("Duplicate Key");

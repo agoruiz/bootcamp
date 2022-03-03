@@ -27,6 +27,7 @@ import java.util.Objects;
  * The persistent class for the film database table.
  * 
  */
+
 @Entity
 @Table(name = "film")
 @NamedQuery(name = "Film.findAll", query = "SELECT f FROM Film f")
