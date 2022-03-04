@@ -41,6 +41,10 @@ public class Inventory implements Serializable {
 	public Inventory() {
 	}
 
+	public Inventory(int inventory) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getInventoryId() {
 		return this.inventoryId;
 	}

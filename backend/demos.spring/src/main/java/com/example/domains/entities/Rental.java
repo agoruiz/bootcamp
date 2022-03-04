@@ -63,6 +63,11 @@ public class Rental implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Rental(int rentalId2, Date rentalDate2, Object object, Customer customer2, Inventory inventory2,
+			Staff staff2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getRentalId() {
 		return this.rentalId;
 	}

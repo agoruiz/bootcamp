@@ -17,6 +17,10 @@ import java.util.List;
 public class Customer implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	public Customer(int i) {
+		super();
+	}
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="customer_id")
@@ -56,9 +60,6 @@ public class Customer implements Serializable {
 	//bi-directional many-to-one association to Rental
 	@OneToMany(mappedBy="customer")
 	private List<Rental> rentals;
-
-	public Customer() {
-	}
 
 	public int getCustomerId() {
 		return this.customerId;
