@@ -133,4 +133,14 @@ public class Rental implements Serializable {
 		this.staff = staff;
 	}
 
+	public boolean isInvalid() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public String getErrorsMessage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
