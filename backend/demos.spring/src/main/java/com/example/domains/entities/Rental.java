@@ -2,6 +2,10 @@ package com.example.domains.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+
+import org.hibernate.validator.constraints.Length;
+
 import java.util.Date;
 import java.sql.Timestamp;
 import java.util.List;
@@ -52,7 +56,11 @@ public class Rental implements Serializable {
 	@JoinColumn(name="staff_id")
 	private Staff staff;
 
-	public Rental() {
+	public Rental(int i) {
+	}
+
+	public Rental(int rentalId2, @NotBlank @Length(max = 50) String rental) {
+		// TODO Auto-generated constructor stub
 	}
 
 	public int getRentalId() {
