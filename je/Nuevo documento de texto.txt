@@ -1,0 +1,3 @@
+C:\Repositorios\je
+docker run -p 20000:8080 -p 50000:50000 -v C:\Repositorios\je:/var/jenkins --name jenkins-maven jenkins-maven
+828e44fa29be496c9cec48c4c57389db

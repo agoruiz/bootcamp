@@ -1,0 +1,14 @@
+{
+  "name": "demos",
+  "version": "1.0.0",
+  "description": "nombredelcurso",
+  "main": "(index.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "angel",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.10.0"
+  }
+}
