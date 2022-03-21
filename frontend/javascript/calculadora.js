@@ -15,6 +15,7 @@ let opmultiplicar = document.getElementById("dividir")
 let flag = false;
 // bandera para cuando se ha echo el primer calculo
 let primeraop = true;
+
 document.getElementById("button1").addEventListener("click", btn1);
 document.getElementById("button2").addEventListener("click", btn2);
 document.getElementById("button3").addEventListener("click", btn3);
@@ -136,7 +137,7 @@ function desabilitar(){
 }
 
 function habilitar(){
-    alert("habiliantado los botones");
+    alert("habilantado los botones");
     document.getElementById("button1").disabled=false;
     document.getElementById("button2").disabled=false;
     document.getElementById("button3").disabled=false;
